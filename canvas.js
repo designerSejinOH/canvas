@@ -52,9 +52,9 @@ function Circle(x, y, dx, dy, radius) {
 	this.draw = function () {
 		c.beginPath();
 		c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-		c.strokeStyle = 'blue';
+		c.strokeStyle = 'rgba(0,0,255,0.7)';
 		c.stroke();
-		c.fillStyle = 'rgba(10,10,10,0.99)';
+		c.fillStyle = 'rgba(10,10,10,0.9)';
 		c.fill(); 
 	}
 	this.update = function () {
@@ -78,7 +78,7 @@ for (var i = 0; i < 100; i++) {
 	var y = radius+Math.random() * (innerHeight - radius*2);
 	var dx = (Math.random() - 0.5);
 	var dy = (Math.random() - 0.5);
-	var radius = 30;
+	var radius = 50*Math.random();
 	circleArray.push(new Circle(x,y,dx,dy,radius));
 	//	var circle = new Circle(200, 200, 3, 3, 30);
 }
