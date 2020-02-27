@@ -4,18 +4,165 @@
 	<meta charset="UTF-8">
 	<title>Canvas Random</title>
 	<style type="text/css">
-		canvas{
-/*			border: 1px solid black;*/
+		canvas {
+			/*			border: 1px solid black;*/
+			position: absolute;
+			top: 0px;
+			z-index: 0;
 		}
-		
-		body{
+
+		body {
 			margin: 0;
+			animation: fadein 3s ease-in-out;
+
 		}
+
+		@keyframes fadein {
+			from {
+				opacity: 0;
+			}
+
+			50%{
+				opacity: 0.5;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+
+
+		.head_Random>a {
+			/*			border: 1px solid;*/
+			height: auto;
+			margin: 0;
+			padding: 0;
+			font-size: 9em;
+			font-weight: 900;
+			color: #ff4800;
+			bottom: 20px;
+			left: 30px;
+			position: fixed;
+			z-index: 1;
+			animation: come 3s ease-in-out;
+		}
+
+		.head_Random>a:hover {
+			text-transform: lowercase;
+		}
+
+		.head_javascript {
+			/*			border: 1px solid;*/
+			height: auto;
+			margin: 0;
+			padding: 0;
+			font-size: 1.8em;
+			font-weight: 900;
+			color: #ff4800;
+			bottom: 45px;
+			right: 30px;
+			position: fixed;
+			z-index: 1;
+		}
+
+		.link {
+			top: 38%;
+			text-align: center;
+			height: auto;
+			margin: 0 auto;
+			padding: 0;
+			font-size: 2em;
+			font-weight: 900;
+			color: #ff4800;
+
+			left: 30px;
+			position: fixed;
+			z-index: 1;
+			-webkit-writing-mode: vertical-lr;
+			-ms-writing-mode: tb-lr;
+
+		}
+
+		.leftText {
+			top: 20px;
+
+			height: auto;
+			margin: 0 auto;
+			padding: 0;
+			font-size: 1.em;
+			font-weight: 900;
+			color: #ff4800;
+
+			left: 30px;
+			position: fixed;
+			z-index: 1;
+
+		}
+
+		.rightText {
+			top: 20px;
+
+			text-align: end;
+			height: auto;
+			margin: 0 auto;
+			padding: 0;
+			font-size: 0.8em;
+			line-height: 1.3em;
+			font-weight: 900;
+			color: #ff4800;
+			right: 30px;
+			position: fixed;
+			z-index: 1;
+		}
+
+		.date {
+			top: 50%;
+			height: auto;
+			margin: 0 auto;
+			padding: 0;
+			font-size: 2em;
+			font-weight: bold;
+			color: #ff4800;
+			right: -40px;
+			position: fixed;
+			z-index: 1;
+			-webkit-transform: rotate(-90deg);
 	</style>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
+
 <body>
-<canvas></canvas>
-<script src="canvas.js"></script>
-</body>
-</html>
+	<div class="head_Random">
+		<a href="index.html">Random</a> </div>
+	<div class="head_javascript">
+		javascript
+	</div>
+	<div class="link">
+		designersejinoh.github.io/canvas
+	</div>
+	<div class="leftText">
+		this.x = x;<br>
+		this.y = y;<br>
+		this.dx = dx;<br>
+		this.dy = dy;<br>
+		this.radius = radius;
+	</div>
+	<div class="rightText">
+
+		&#60;!DOCTYPE html&#62; <br>
+		&#60;html lang="en"&#62; <br>
+		&#60;head&#62;<br>
+		&#60;meta charset="UTF-8"&#62;<br>
+		&#60;title&#62;Canvas Random&#60;/title&#62; <br>
+		&#60;/head&#62;<br>
+		&#60;body&#62;<br>
+		&#60;canvas&#62;&#60;/canvas&#62;<br>
+		&#60;script src="canvas.js"&#62;&#60;/script&#62;<br>
+		&#60;/body&#62;<br>
+		&#60;/html&#62;
+	</div>
+	<div class="date">
+		2020.02.23
+	</div>
+	<canvas>
+	</canvas>
+	<script src="canvas.js"></script>
+</body></html>
