@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Canvas Random</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto&display=swap" rel="stylesheet">
 	<style type="text/css">
 		canvas {
 			/*			border: 1px solid black;*/
@@ -12,6 +13,9 @@
 		}
 
 		body {
+			font-family: 'Open Sans', sans-serif;
+	
+
 			margin: 0;
 			animation: fadein 3s ease-in-out;
 
@@ -31,46 +35,42 @@
 		}
 
 
-		.head_Random>a {
+		.head_Random{
 			/*			border: 1px solid;*/
 			height: auto;
 			margin: 0;
 			padding: 0;
-			font-size: 9em;
+			font-size: 16vw;
+			letter-spacing: -1vw;
 			font-weight: 900;
 			color: #ff4800;
-			bottom: 20px;
+			bottom: 1vw;
 			left: 30px;
 			position: fixed;
 			z-index: 1;
 			animation: come 3s ease-in-out;
 		}
-
-		.head_Random>a:hover {
-			text-transform: lowercase;
-		}
-
 		.head_javascript {
 			/*			border: 1px solid;*/
 			height: auto;
 			margin: 0;
 			padding: 0;
-			font-size: 1.8em;
+			font-size: 3vw;
 			font-weight: 900;
 			color: #ff4800;
-			bottom: 45px;
+			bottom: 4vw;
 			right: 30px;
 			position: fixed;
 			z-index: 1;
 		}
 
 		.link {
-			top: 38%;
+			top: 40vh;
 			text-align: center;
 			height: auto;
 			margin: 0 auto;
 			padding: 0;
-			font-size: 2em;
+			font-size: 3vw;
 			font-weight: 900;
 			color: #ff4800;
 
@@ -88,7 +88,7 @@
 			height: auto;
 			margin: 0 auto;
 			padding: 0;
-			font-size: 1.em;
+			font-size: 1.6vw;
 			font-weight: 900;
 			color: #ff4800;
 
@@ -105,7 +105,7 @@
 			height: auto;
 			margin: 0 auto;
 			padding: 0;
-			font-size: 0.8em;
+			font-size: 1.6vw;
 			line-height: 1.3em;
 			font-weight: 900;
 			color: #ff4800;
@@ -119,10 +119,10 @@
 			height: auto;
 			margin: 0 auto;
 			padding: 0;
-			font-size: 2em;
+			font-size: 3vw;
 			font-weight: bold;
 			color: #ff4800;
-			right: -40px;
+			right: -2vw;
 			position: fixed;
 			z-index: 1;
 			-webkit-transform: rotate(-90deg);
@@ -130,8 +130,8 @@
 </head>
 
 <body>
-	<div class="head_Random">
-		<a href="index.html">Random</a> </div>
+	<div class="head_Random" onClick="window.location.reload()">
+		Random </div>
 	<div class="head_javascript">
 		javascript
 	</div>
